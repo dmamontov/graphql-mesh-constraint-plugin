@@ -11,11 +11,11 @@ import pluginPrettier from "eslint-plugin-prettier/recommended";
 export default [
     {
         rules: eslint.configs.recommended.rules,
-        ignores: ["node_modules/**/*", ".bob/**/*", "dist/**/*"],
+        ignores: ["node_modules/**/*", ".bob/**/*", "dist/**/*", "src/graphql-constraint-directive/**/*"],
     },
     {
         files: ["**/*.ts", "**/*.tsx"],
-        ignores: ["node_modules/**/*", ".bob/**/*", "dist/**/*"],
+        ignores: ["node_modules/**/*", ".bob/**/*", "dist/**/*", "src/graphql-constraint-directive/**/*"],
         languageOptions: {
             ecmaVersion: 2020,
             globals: {

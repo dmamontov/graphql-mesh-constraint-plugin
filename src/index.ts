@@ -1,7 +1,7 @@
-import { createEnvelopQueryValidationPlugin } from 'graphql-constraint-directive';
 import { type Plugin } from 'graphql-yoga';
 import { stringInterpolator } from '@graphql-mesh/string-interpolation';
 import { type MeshPlugin, type MeshPluginOptions } from '@graphql-mesh/types';
+import { createEnvelopQueryValidationPlugin } from './graphql-constraint-directive';
 import { type ConstraintPluginConfig } from './types';
 
 export default function useConstraint(

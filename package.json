@@ -1,6 +1,6 @@
 {
   "name": "@dmamontov/graphql-mesh-constraint-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Dmitry Mamontov",
   "type": "module",
   "repository": {
@@ -42,9 +42,11 @@
     "@envelop/core": "^5.0.0",
     "@graphql-mesh/string-interpolation": "^0.5.3",
     "@graphql-mesh/types": "^0.97.5",
+    "@graphql-tools/schema": "^9.0.0",
+    "@graphql-tools/utils": "^9.0.0",
     "graphql": "*",
-    "graphql-constraint-directive": "^5.4.3",
-    "graphql-yoga": "^5.1.1"
+    "graphql-yoga": "^5.1.1",
+    "validator": "^13.6.0"
   },
   "devDependencies": {
     "@babel/core": "7.24.5",
@@ -83,7 +85,9 @@
   },
   "bob": {
     "build": {
-      "copy": ["./src/constraint-directive.graphql"]
+      "copy": [
+        "./src/constraint-directive.graphql"
+      ]
     }
   }
 }
