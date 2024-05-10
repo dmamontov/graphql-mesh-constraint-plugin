@@ -4,7 +4,7 @@ module.exports = class ConstraintDirectiveError extends Error {
     this.name = this.constructor.name
     Error.captureStackTrace(this, this.constructor)
 
-    this.code = 'VALIDATION_FAILED'
+    this.code = 'GRAPHQL_VALIDATION_FAILED'
     this.fieldName = fieldName
     this.context = context
   }
